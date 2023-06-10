@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="personal_area.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <img src="../img/logo.svg" alt="" height="70px" width="70px">
+            <button class="buttons-logo">Время выпечки</button>
+            
+            <div class="menu">
+                <a href="index.html" class="buttons"><img src="../img/home.svg" height="38px" width="38px" alt="">
+                    Главная 
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <a href="../shop/shop.html" class="buttons">
+                    <img src="../img/open.svg" height="38px" width="38px" alt="">
+                    Магазин
+                </a>
+                    <div class="menu-content">
+                        <a href="../shop/shopOrder/shopOrder.html">На заказ</a>
+                        <a href="../shop/shopReady/shopReady.html">На готовенькое</a>
+                        <a href="../shop/shopCome/shopCome.html">Приходи к нам</a>
+                        <a href="../shop/shopHoliday/shopHoliday.html">Праздник</a>
+                        <a href="../shop/shopDo/shopDo.html">Сделай сам</a>
+                        <a href="../shop/shopDelivery/shopDelivery.html">Доставка</a>
+                    </div>
+            </div>
+
+
+            <div class="menu">
+                <a href="../recipes/recipes.html" class="buttons">
+                    <img src="../img/book.svg" height="38px" width="38px" alt="">
+                    Рецепты
+                </a>
+                    <div class="menu-content">
+                        <a href="../recipes/recipesCupcake/recipesCupcake.html">Кексики</a>
+                        <a href="../recipes/recipesCake/recipesCake.html">Тортики</a>
+                        <a href="../recipes/recipesIceCream/recipesIceCream.html">Мороженки</a>
+                        <a href="../recipes/recipesPie/recipesPie.html">Пироженки</a>
+                        <a href="../recipes/recipesZephyr/recipesZephyr.html">Зефирки</a>
+                        <a href="../recipes/recipesCookie/recipesCookie.html">Печеньки</a>
+                    </div>
+            </div>
+
+            <div >
+                <form class="form">
+                    <input type="text" name="text" class="input">
+                    <input type="submit" name="submit" class="buttons-poisk" value="Поиск">
+                </form>
+            </div>
+
+            
+            <a href="../personal_area/personal_area.html" target="_blank" class="buttons-cabinet">
+                <img src="../img/wooden.svg" height="38px" width="38px" alt="">
+                Личный кабинет
+            </a>
+            <a href="../basket/basket.html" target="_blank" class="buttons-cabinet">
+                <img src="../img/basket.svg" height="30px" width="30px" alt="">
+                Корзина
+            </a>
+ 
+          
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container-main">
+            <div class="container-main-log-in">
+                Авторизоваться
+            </div>
+            <div class="container-main-form">
+                <form action="">
+                    <input id="login" type="email" name="login" placeholder="Введите email" value="" required>
+                    <input id="password" type="password" name="psw" placeholder="Введите пароль не менее 8 символов" value="" required>
+                    <img src="../img/visibility_FILLO.svg" id="imgOff" class="off" alt="">
+                    <img src="../img/visibility_off.svg" id="imgOn" class="img-password-off" alt="">
+                </form>
+            </div>
+            
+            <div class="container-main-button">
+                <button id="entrance">Войти</button> 
+        
+                <button id="register">Регистрация</button>
+            </div>
+
+            <div class="container-main-checkbox">
+                <input type="checkbox" checked="checked"> Запомнить меня
+            </div>
+
+        </div>
+
+        
+
+        <div id="id01" class="modal">
+            <span id="closeJmg" class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="D:\Учёба\Рецепты чистовой\user'sPersonalAccount\user'sPersonalAccount.html">
+              <div class="modal-container">
+                <h1 class="modal-singup">Зарегистрироваться</h1>
+                <p class="modal-please">Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+                <hr>
+                <label for="email" class="modal-label"><b>Введите адрес электронной почты</b></label>
+                <input id="modal-input-email" type="text" class="modal-input-email" placeholder="Введите email" value="" name="email" required>
+          
+                <label for="psw" class="modal-label"><b>Введите пароль</b></label>
+                <input  id="modal-password-one" type="password" class="modal-input-password-one" placeholder="Введите пароль" value="" name="psw" required>
+                <img src="../img/visibility_FILLO.svg" id="imgOffModalOne" class="off" alt="">
+                <img src="../img/visibility_off.svg" id="imgOnModalOne" class="img-password-off" alt="">
+
+                <label for="psw-repeat" class="modal-label"><b>Повторите пароль</b></label>
+                <input id="modal-password-two" type="password" class="modal-input-password-two" placeholder="Повторите пароль" value="" name="psw-repeat" required>
+                <img src="../img/visibility_FILLO.svg" id="imgOffModalTwo" class="off" alt="">
+                <img src="../img/visibility_off.svg" id="imgOnModalTwo" class="img-password-off" alt="">
+                
+                <label class="modal-checkbox">
+                  <input id="checkedModal" type="checkbox"  checked="checked" name="remember">Запомнить меня
+                </label>
+          
+                <p class="modal-confid">Создавая учетную запись, вы соглашаетесь с нашими<a href="#" style="color:dodgerblue">Условиями и конфиденциальностью</a>.</p>
+          
+                <div class="modal-clearfix">
+                  <button id="close" type="button" class="cancelbtn">Отмена</button>
+                  <button id="submit-modal" type="submit" class="signupbtn">Зарегистрироваться</button>
+                </div>
+              </div>
+            </form>
+          </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-logo">
+                <img src="../img/logo.svg" alt="" height="70px" width="70px">
+                <div class="footer-container-cake">
+                    Время выпечки
+                </div>
+                <div class="footer-container-cake-lorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="footer-container-cake">
+                    <a href="https://www.instagram.com/"> <img src="../img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/?lang=ru"> <img src="../img/twitter.svg" alt=""></a>
+                    <a href="https://ru-ru.facebook.com/"> <img src="../img/facebook.svg" alt=""></a>
+                    <a href="https://www.youtube.com/"> <img src="../img/youtube.svg" alt=""></a>
+                </div>
+            </div>
+          
+            
+            <div class="footer-container-links">
+                <div class="footer-container-fast-links">
+                    Быстрые ссылки
+                </div>
+                <div class="footer-container-link">    
+                    <a href="#">
+                        О нас
+                    </a>
+                    <a href="#">
+                        Карта сайта
+                    </a>
+                    <a href="#">
+                        Блог
+                    </a>
+                    <a href="#">
+                        Агенты
+                    </a>
+                    <a href="#">
+                        Покупка
+                    </a>
+                    <a href="#">
+                        Аренда
+                    </a>
+                    <a href="#">
+                        Купить сейчас
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer-container-contacts">
+                <div class="footer-container-contact-connection">
+                    Связаться с нами
+                </div>
+                <div class="footer-container-contact-plaze">
+                    <img src="../img/place_white.svg" alt=""> Адрес — Республика Беларусь, г. Минск,
+                    ул. Вокзальная, 1, 220007.
+                </div>
+                <div class="footer-container-contact-call">
+                    <img src="../img/call_white.svg" alt=""> Позвоните нам – +375 (44) 793-89-30
+                </div>
+                <div class="footer-container-contact-email">
+                    <img src="../img/email_white.svg" alt=""> Напишите нам – sima110190@yandex.ru
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="personal_area.js"></script>
+</body>
+</html>

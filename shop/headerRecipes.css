@@ -1,0 +1,127 @@
+body {
+    background-color: bisque;
+    margin: 0;
+}
+
+.header {
+    position: fixed;  
+    top: 0;  
+    z-index: 100;  
+    width: 100%;  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(221, 148, 13);
+    width: 100%;
+}
+
+.buttons, .buttons-logo, .buttons-basket, .buttons-app, .buttons-cabinet, .buttons-poisk {
+    background-color: rgb(221, 148, 13);
+    color: rgb(126, 8, 116);
+    padding: 0px;
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: bold;
+    border: none;
+    width: 150px;
+    height: 80px;
+}
+
+.buttons-logo {
+    width: 156px;
+    font-size: 20px;
+    margin-left: -14px;
+}
+
+.buttons-cabinet, .buttons-basket, .buttons-app {
+    display: flex;
+    font-size: 13px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-poisk {
+    width: 50px;
+}
+.buttons:hover, .buttons-basket:hover, .buttons-app:hover, .buttons-cabinet:hover {
+    color: #e6c2ce;
+}
+
+.buttons:active, .buttons-basket:active, .buttons-app:active, .buttons-cabinet:active {
+    color: white;
+}
+.buttons-poisk:active {
+    color: white;
+}
+
+
+.buttons-logo img, .buttons-basket img, .buttons img, .buttons-cabinet img {
+    vertical-align: middle;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+  }
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: rgb(221, 148, 13);
+  }
+
+.menu-content a {
+    color: rgb(126, 8, 116);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+.menu-content a:hover {
+    background-color: rgb(111, 66, 11); 
+    color: bisque;
+  }
+
+
+.menu:hover .menu-content {
+    display: block;
+}
+
+.menu:hover .menu {
+    background-color: #b3cab4;
+}
+
+.input {
+    background-color: #ebc190;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 150px;
+}
+
+.input:focus-visible {
+    border: 3px solid rgb(111, 66, 11);
+    outline: none;
+}
+
+.form {
+    margin-left: 320px;
+}
+

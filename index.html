@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Время вкуснятинки</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <img src="img/logo.svg" alt="" height="70px" width="70px">
+            <button class="buttons-logo">Время выпечки</button>
+
+            <div class="menu">
+                <a href="index.html" class="buttons"><img src="img/home.svg" height="38px" width="38px" alt="">
+                    Главная 
+                </a>
+            </div>
+            
+            <div class="menu">
+                <a href="shop\shop.html" class="buttons"><img src="img/open.svg" height="38px" width="38px"
+                        alt="">
+                        Магазин
+                </a>
+                <div class="menu-content">
+                    <a href="shop/shopOrder/shopOrder.html">На заказ</a>
+                    <a href="shop/shopReady/shopReady.html">На готовенькое</a>
+                    <a href="shop/shopCome/shopCome.html">Приходи к нам</a>
+                    <a href="shop/shopHoliday/shopHoliday.html">Праздник</a>
+                    <a href="shop/shopDo/shopDo.html">Сделай сам</a>
+                    <a href="shop/shopDelivery/shopDelivery.html">Доставка</a>
+                </div>
+            </div>
+
+
+            <div class="menu">
+                <a href="recipes\recipes.html" class="buttons"><img src="img/book.svg" height="38px" width="38px"
+                        alt="">Рецепты</a>
+                <div class="menu-content">
+                    <a href="recipes/recipesCupcake/recipesCupcake.html">Кексики</a>
+                    <a href="recipes/recipesCake/recipesCake.html">Тортики</a>
+                    <a href="recipes/recipesIceCream/recipesIceCream.html">Мороженки</a>
+                    <a href="recipes/recipesPie/recipesPie.html">Пироженки</a>
+                    <a href="recipes/recipesZephyr/recipesZephyr.html">Зефирки</a>
+                    <a href="recipes/recipesCookie/recipesCookie.html">Печеньки</a>
+                </div>
+            </div>
+
+            <div>
+                <form class="form">
+                    <input type="text" name="text" class="input">
+                    <input type="submit" name="submit" class="buttons-poisk" value="Поиск">
+                </form>
+            </div>
+
+
+            <a id="button-cabinet" href="personal_area/personal_area.html"
+                class="buttons-cabinet">
+                <img src="img/wooden.svg" height="38px" width="38px" alt="">
+                Личный кабинет
+            </a>
+            <a href="basket\basket.html" class="buttons-cabinet"><img src="img/basket.svg" height="30px" width="30px"
+                    alt="">
+                Корзина
+            </a>
+
+
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main">
+
+            <div class="container-main">
+                <img src="img/cheese-cake-1559403_1920.jpg" alt="">
+                <div class="main-acquaintance">
+                    <div class="main-service">
+                        Мы предоставляем лучшие услуги
+                    </div>
+                    <div class="main-food">
+                        Наслаждайтесь вкусной едой каждый день
+                    </div>
+                    <div class="main-know">
+                        <a href="#">Узнать больше</a>
+                    </div>
+    
+                </div>
+    
+                <div class="main-pie">
+                    <img src="img/tart-2409958_640.jpg" alt="">
+                </div>
+            </div>
+    
+            <div class="main-categories">
+                Категории
+            </div>
+    
+            <div class="main-category">
+                <div class="button-left-blok">
+                    <button class="button-left"><img src="img/button left.svg" alt="" height="50px"></button>
+                </div>
+                <div class="slider">
+                    <div class="main-category-blok-container">
+                        <div class="main-category-blok">
+                            <img src="img/cake-1284548_640 (1).jpg" alt="" height="200px" width="200px"> <br>
+                            <a href="">На заказ</a>
+                        </div>
+                        <div class="main-category-blok">
+                            <img src="img/dessert.png" alt="" height="200px" width="200px">
+                            <a href="">На готовенькое</a>
+                        </div>
+                        <div class="main-category-blok">
+                            <img src="img/dessert.png" alt="" height="200px" width="200px">
+                            <a href="">Приходи к нам</a>
+                        </div>
+                        <div class="main-category-blok">
+                            <img src="img/dessert.png" alt="" height="200px" width="200px">
+                            <a href="">Праздник</a>
+                        </div>
+                        <div class="main-category-blok">
+                            <img src="img/dessert.png" alt="" height="200px" width="200px">
+                            <a href="">Сделай сам</a>
+                        </div>
+                        <div class="main-category-blok">
+                            <img src="img/dessert.png" alt="" height="200px" width="200px">
+                            <a href="">Доставка</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-richt-blok">
+                    <button class="button-richt"><img src="img/button richt.svg" alt="" height="50px"></button>
+                </div>
+            </div>
+    
+    
+            <div class="main-categories-good">
+                Самая лучшая еда на сегодня</div>
+    
+            <div class="main-buttons">
+                <button class="main-button" id="cakeButton">Кексики</button>
+                <button class="main-button" id="tortButton">Тортики</button>
+                <button class="main-button" id="iceCreamButton">Мороженки</button>
+                <button class="main-button" id="pieButton">Пироженки</button>
+                <button class="main-button" id="marshmallowButton">Зефирки</button>
+                <button class="main-button" id="cookieButton">Печеньки</button>
+            </div>
+    
+            <div class="main-menu-good-active" id="cake">
+                <div class="slider-two">
+    
+                    <div>
+                        <img src="img/logo.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/cupcake.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/muffin.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/cupcake1.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/logo.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/logo.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-menu-good-hidden" id="tort">
+                <div class="slider-two">
+                    <div>
+                        <img src="img/chocolate.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/chocolate.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/chocolate.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/chocolate.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/chocolate.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/chocolate.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-menu-good-hidden" id="iceCream">
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/ice-cream.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/iced-lolly.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/ice.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/ice-cream.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/ice-cream.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/ice-cream.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-menu-good-hidden" id="pie">
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/logo.svg" alt="" height="250px" width="250px">
+                    </div>
+                    <div class="add-to-basket">
+                        <button class="add-to-basket-button">
+                            В корзину
+                        </button>
+                    </div>
+                    <div class="container-cake">
+                        <div class="name-cake">
+                            Кекс с изюмом
+                        </div>
+                        <div class="rating">
+                            <img src="img/rating-24185.svg" alt="" height="15px" width="250px">
+                        </div>
+                        <div class="price-cake">
+                            $ 2
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-two">
+                    <div>
+                        <img src="img/pie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/pie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/pie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/pie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/pie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-menu-good-hidden" id="marshmallow">
+                <div class="slider-two">
+                    <div>
+                        <img src="img/Lovepik.png" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/Lovepik.png" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/Lovepik.png" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/Lovepik.png" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/Lovepik.png" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/Lovepik.png" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-menu-good-hidden" id="cookie">
+                <div class="slider-two">
+                    <div>
+                        <img src="img/cookie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/tree.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/cookie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/cookie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/cookie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+                <div class="slider-two">
+                    <div>
+                        <img src="img/cookie.svg" alt="" height="250px" width="250px">
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="main-application-container">
+                <div class="main-application">
+                    <div class="main-application-discont"> Загрузите наше приложение и получите скидку 20%</div>
+                    <div class="main-application-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Eos eveniet sint consequuntur tempore odio ipsam explicabo
+                        nemo esse facere libero! Hic corporis, eos consectetur quod ratione praesentium deserunt commodi
+                        quo.</div>
+                    <div class="main-application-button">
+                        <a href="http://play.google.com/store/games"><img src="img/offer-button1.png" alt=""></a>
+                        <a href="http://apps.apple.com/"><img src="img/offer-button2.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-container-special-food">
+                <div class="main-container-special">
+                    <div class="main-special-food">
+                        Мы предоставляем специальную еду каждый раз для вас
+                    </div>
+                    <div class="main-special-lorem">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua.
+                        Quis ipsum suspendisse ultrices gravidacommodo viverra maecenas accumsan lacus vel o eiusmod tempor
+                        incididunt ut Labore facilisis.
+                    </div>
+                    <div class="main-special">
+                        100% Потрясающие отзывы клиентов
+                        Consectetur orem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut Labore et
+                        dolore magna aliqua.</div>
+                    <div class="main-special">
+                        Самые быстрые услуги
+                        Consectetur orem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua.
+                    </div>
+                    <div class="main-special">
+                        Качественная еда со скидками
+                        Consectetur orem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua
+                    </div>
+                </div>
+                <div class="main-special-img">
+                    <img src="img/special-food.png" alt="">
+                </div>
+            </div>
+    
+            <div class="main-container-blok-booking">
+                <div class="main-container-booking">
+                    <div class="main-container-blok-contact">
+                        <div class="main-container-blok-food">
+                            Давайте начнем готовить вкусную еду вместе с нами
+                        </div>
+                        <div class="main-container-blok-equal">
+                            С другой стороны, мы осуждаем с праведным негодованием и ненавидим людей,
+                            которые так обольщены и деморализованы прелестями удовольствия момента,
+                            которые неизбежно последуют; и равны.
+                        </div>
+                        <div class="main-container-blok-contacts">
+                            <div class="main-container-blok-call">
+                                Позвоните нам - +375 (44) 793-89-30 <br>
+                            </div>
+                            <div class="main-container-blok-email">
+                                Напишите нам - sima110190@yandex.ru<br>
+                            </div>
+                            <div class="main-container-blok-adres">
+                                Адрес: Республика Беларусь, г. Минск, <br> ул. Вокзальная, 1, 220007.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="main-container-blok-form">
+                        <div class="main-container-blok-bron">
+                            Бронирование
+                        </div>
+                        <div class="main-container-blok-table">
+                            Забронируйте столик
+                        </div>
+    
+    
+                        <form name="form" action="" class="main-container-blok-date">
+                            <div>
+                                <div class="main-container-blok-input-date-time">
+                                    <div class="main-container-blok-dat">
+                                        <input type="date" id="dateBron" name="date" min="" value="" class="datepicker"
+                                            required />
+                                    </div>
+                                    <div class="main-container-blok-time" class="main-container-blok-time">
+                                        <input type="time" id="time" name="time" min="" value=""
+                                            class="main-container-blok-input-time" required />
+                                    </div>
+                                    <select name="user_profile_color_1" class="main-container-blok-option-adult" required>
+                                        <option value="" class="main-container-blok-option-adult">Выберите значение</option>
+                                        <option value="1">1 взрослый</option>
+                                        <option value="2">2 взрослых</option>
+                                        <option value="3">3 взрослых</option>
+                                        <option value="4">4 взрослых</option>
+                                        <option value="5">5 взрослых</option>
+                                        <option value="6">6 взрослых</option>
+                                    </select>
+                                    <select name="user_profile_color_2" class="main-container-blok-option-adult">
+                                        <option value="">Выберите значение</option>
+                                        <option value="1">1 ребёнок</option>
+                                        <option value="2">2 ребёнка</option>
+                                        <option value="3">3 ребёнка</option>
+                                        <option value="4">4 ребёнка</option>
+                                        <option value="5">5 детей</option>
+                                        <option value="6">6 детей</option>
+                                    </select>
+                                    <input type="text" id="name" placeholder="Введите сообщение"
+                                        class="main-container-blok-option-message">
+                                    <div>
+                                        <input id="submit" type="submit" class="main-container-blok-option-submit">
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-container-blok-partners">
+                <div class="main-container-blok-partner">
+                    Наши партнеры
+                </div>
+                <div class="main-container-blok-partners-imgs">
+                    <div class="main-container-blok-partners-img">
+                        <img src="img/patners2.png" alt="">
+                    </div>
+                    <div class="main-container-blok-partners-img">
+                        <img src="img/patners3.png" alt="">
+                    </div>
+                    <div class="main-container-blok-partners-img">
+                        <img src="img/patners4.png" alt="">
+                    </div>
+                    <div class="main-container-blok-partners-img">
+                        <img src="img/patners5.png" alt="">
+                    </div>
+                    <div class="main-container-blok-partners-img">
+                        <img src="img/patners6.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-logo">
+                <img src="img/logo.svg" alt="" height="70px" width="70px">
+                <div class="footer-container-cake">
+                    Время выпечки
+                </div>
+                <div class="footer-container-cake-lorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="footer-container-cake">
+                    <a href="https://www.instagram.com/"> <img src="img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/?lang=ru"> <img src="img/twitter.svg" alt=""></a>
+                    <a href="https://ru-ru.facebook.com/"> <img src="img/facebook.svg" alt=""></a>
+                    <a href="https://www.youtube.com/"> <img src="img/youtube.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-container-links">
+                <div class="footer-container-fast-links">
+                    Быстрые ссылки
+                </div>
+                <div class="footer-container-link">
+                    <a href="">
+                        О нас
+                    </a>
+                    <a href="">
+                        Карта сайта
+                    </a>
+                    <a href="">
+                        Блог
+                    </a>
+                    <a href="">
+                        Агенты
+                    </a>
+                    <a href="">
+                        Покупка
+                    </a>
+                    <a href="">
+                        Аренда
+                    </a>
+                    <a href="">
+                        Купить сейчас
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer-container-contacts">
+                <div class="footer-container-contact-connection">
+                    Связаться с нами
+                </div>
+                <div class="footer-container-contact-plaze">
+                    <img src="img/place_white.svg" alt=""> Адрес — Республика Беларусь, г. Минск,
+                    ул. Вокзальная, 1, 220007.
+                </div>
+                <div class="footer-container-contact-call">
+                    <img src="img/call_white.svg" alt=""> Позвоните нам – +375 (44) 793-89-30
+                </div>
+                <div class="footer-container-contact-email">
+                    <img src="img/email_white.svg" alt=""> Напишите нам – sima110190@yandex.ru
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

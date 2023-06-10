@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет пользователя</title>
+    <link rel="stylesheet" href="user'sPersonalAccount.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../img/logo.svg" alt="" height="70px" width="70px">
+            <button class="buttons-logo">Время выпечки</button>
+            
+            <div class="menu">
+                <a href="index.html" class="buttons"><img src="../img/home.svg" height="38px" width="38px" alt="">
+                    Главная 
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <a href="../shop/shop.html" class="buttons">
+                    <img src="../img/open.svg" height="38px" width="38px" alt="">
+                    Магазин
+                </a>
+                    <div class="menu-content">
+                        <a href="../shop/shopOrder/shopOrder.html">На заказ</a>
+                        <a href="../shop/shopReady/shopReady.html">На готовенькое</a>
+                        <a href="../shop/shopCome/shopCome.html">Приходи к нам</a>
+                        <a href="../shop/shopHoliday/shopHoliday.html">Праздник</a>
+                        <a href="../shop/shopDo/shopDo.html">Сделай сам</a>
+                        <a href="../shop/shopDelivery/shopDelivery.html">Доставка</a>
+                    </div>
+            </div>
+
+
+            <div class="menu">
+                <a href="../recipes/recipes.html" class="buttons"><img src="../img/book.svg"  height="38px" width="38px" alt="">
+                    Рецепты
+                </a>
+                    <div class="menu-content">
+                        <a href="../recipes/recipesCupcake/recipesCupcake.html">Кексики</a>
+                        <a href="../recipes/recipesCake/recipesCake.html">Тортики</a>
+                        <a href="../recipes/recipesIceCream/recipesIceCream.html">Мороженки</a>
+                        <a href="../recipes/recipesPie/recipesPie.html">Пироженки</a>
+                        <a href="../recipes/recipesZephyr/recipesZephyr.html">Зефирки</a>
+                        <a href="../recipes/recipesCookie/recipesCookie.html">Печеньки</a>
+                    </div>
+            </div>
+
+            <div >
+                <form class="form">
+                    <input type="text" name="text" class="input">
+                    <input type="submit" name="submit" class="buttons-poisk" value="Поиск">
+                </form>
+            </div>
+
+            
+            <a href="../user'sPersonalAccount/user'sPersonalAccount.html" class="buttons-cabinet">
+                <img src="../img/wooden.svg" height="38px" width="38px" alt="">
+                Личный кабинет
+            </a>
+            <a href="../basket/basket.html" class="buttons-cabinet">
+                <img src="../img/basket.svg" height="30px" width="30px" alt="">
+                Корзина
+            </a>
+ 
+          
+        </div>
+    </header>
+    
+    <main class="main">
+        <!-- <a href="D:\Учёба\Рецепты чистовой\index.html">й</a> -->
+        <div class="mainForm">
+            <div>
+                <form action="">
+                    <div class="formName">
+                        Имя
+                    </div>
+                    <input id="firstName" class="formInput" type="text" placeholder="Марина" required>
+                    <div class="formStar">
+                        *
+                    </div>
+                    <div class="formSurname">
+                        Фамилия
+                    </div>
+                    <input id="lastName" class="formInput" type="text" placeholder="Гринкевич" required>
+                    <div class="formStar">
+                        *
+                    </div>
+                    <div class="formEmail">
+                        Еmail
+                    </div>
+                    <input id="email-user" class="formInput" type="email" required>
+                    <div class="formStar">
+                        *
+                    </div>
+                    <div class="formDateOfBirth">
+                        Дата рождения
+                    </div>
+                    <input class="formInput" type="date" name="" id="" >
+                    
+                    <div class="formPhoneNumber">
+                        Номер телефона
+                    </div>
+                    <div class="formTel">
+                        <select class="formCod" name="" id="">
+                            <option value="">Код</option>
+                            <option value="">025</option>
+                            <option value="">029</option>
+                            <option value="">033</option>
+                            <option value="">044</option>
+                        </select>
+                        <input class="formInputTel" type="tel" name="" id="" placeholder="700-00-00">
+                    </div>
+
+                    <div class="formCityStreet">
+                        <div class="formCity">
+                            Город
+                        </div>
+                        <select name="" id="" class="selectCity">
+                            <option value="">Город</option>
+                            <option value="">Минск</option>
+                            <option value="">Гродно</option>
+                            <option value="">Гомель</option>
+                            <option value="">Могилев</option>
+                            <option value="">Брест</option>
+                            <option value="">Витебск</option>
+                        </select>
+                        <div class="formStreet">
+                            улица
+                        </div>
+                        <select name="" id="" class="selectStreet">
+                            <option value="">улица</option>
+                            <option value="">Вокзальная</option>
+                            <option value="">Дзержинского</option>
+                            <option value="">Воронянского</option>
+                            <option value="">Авакяна</option>
+                            <option value="">Чкалова</option>
+                            <option value="">Казинца</option>
+                            <option value="">Левкова</option>
+                            <option value="">Могилевская</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="formCardNumber">
+                        Номер карты
+                    </div>
+                    <input type="text" class="formInput" placeholder="0000 0000 0000 0000">
+                    <div class="formValidity" >
+                        Срок действия
+                    </div>
+                    <input type="text" class="formInput" placeholder="00/00">
+                    <div class="formCVV">
+                        CVV
+                    </div>
+                    <input type="password" class="formInput" placeholder="000">
+                    <div class="formChangePassword">
+                        Изменить пароль
+                    </div>
+                    <input  type="password" name="" id="passwordUserOne" class="formInput" required>
+                    <div class="formStar">
+                        *
+                    </div>
+                    <div class="formChangePassword">
+                        Изменить пароль
+                    </div>
+                    <input type="password" name="" id="passwordUserTwo" class="formInput" required>
+                    <div class="formStar">
+                        *
+                    </div>
+                </form>
+            </div>
+    
+            <div class="formButtons">
+                <button class="formButton">
+                    Отмена
+                </button>
+    
+                <button id="buttonSave" class="formButton">
+                    Сохранить
+                </button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-logo">
+                <img src="../img/logo.svg" alt="" height="70px" width="70px">
+                <div class="footer-container-cake">
+                    Время выпечки
+                </div>
+                <div class="footer-container-cake-lorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="footer-container-cake">
+                    <a href="https://www.instagram.com/"> <img src="../img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/?lang=ru"> <img src="../img/twitter.svg" alt=""></a>
+                    <a href="https://ru-ru.facebook.com/"> <img src="../img/facebook.svg" alt=""></a>
+                    <a href="https://www.youtube.com/"> <img src="../img/youtube.svg" alt=""></a>
+                </div>
+            </div>
+          
+            
+            <div class="footer-container-links">
+                <div class="footer-container-fast-links">
+                    Быстрые ссылки
+                </div>
+                <div class="footer-container-link">    
+                    <a href="">
+                        О нас
+                    </a>
+                    <a href="">
+                        Карта сайта
+                    </a>
+                    <a href="">
+                        Блог
+                    </a>
+                    <a href="">
+                        Агенты
+                    </a>
+                    <a href="">
+                        Покупка
+                    </a>
+                    <a href="">
+                        Аренда
+                    </a>
+                    <a href="">
+                        Купить сейчас
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer-container-contacts">
+                <div class="footer-container-contact-connection">
+                    Связаться с нами
+                </div>
+                <div class="footer-container-contact-plaze">
+                    <img src="../img/place_white.svg" alt=""> Адрес — Республика Беларусь, г. Минск,
+                    ул. Вокзальная, 1, 220007.
+                </div>
+                <div class="footer-container-contact-call">
+                    <img src="../img/call_white.svg" alt=""> Позвоните нам – +375 (44) 793-89-30
+                </div>
+                <div class="footer-container-contact-email">
+                    <img src="../img/email_white.svg" alt=""> Напишите нам – sima110190@yandex.ru
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="user'sPersonalAccount.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">F
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты</title>
+    <link rel="import" href="headerRecipes.ntml">
+    <link rel="stylesheet" href="headerRecipes.css">
+    <link rel="stylesheet" href="recipes.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../img/logo.svg" alt="" height="70px" width="70px">
+            <button class="buttons-logo">Время выпечки</button>
+            
+            <div class="menu">
+                <a href="index.html" class="buttons"><img src="../img/home.svg" height="38px" width="38px" alt="">
+                    Главная 
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <a href="../shop/shop.html" class="buttons">
+                    <img src="../img/open.svg" height="38px" width="38px"alt="">
+                        Магазин
+                </a>
+                <div class="menu-content">
+                    <a href="../shop/shopOrder/shopOrder.html">На заказ</a>
+                    <a href="../shop/shopReady/shopReady.html">На готовенькое</a>
+                    <a href="../shop/shopCome/shopCome.html">Приходи к нам</a>
+                    <a href="../shop/shopHoliday/shopHoliday.html">Праздник</a>
+                    <a href="../shop/shopDo/shopDo.html">Сделай сам</a>
+                    <a href="../shop/shopDelivery/shopDelivery.html">Доставка</a>
+                </div>
+            </div>
+
+
+            <div class="menu">
+                <a href="../recipes/recipes.html" class="buttons">
+                    <img src="../img/book.svg" height="38px" width="38px" alt="">
+                    Рецепты
+                </a>
+                <div class="menu-content">
+                    <a href="recipesCupcake/recipesCupcake.html">Кексики</a>
+                    <a href="recipesCake/recipesCake.html">Тортики</a>
+                    <a href="recipesIceCream/recipesIceCream.html">Мороженки</a>
+                    <a href="recipesPie/recipesPie.html">Пироженки</a>
+                    <a href="recipesZephyr/recipesZephyr.html">Зефирки</a>
+                    <a href="recipesCookie/recipesCookie.html">Печеньки</a>
+                </div>
+            </div>
+
+            <div>
+                <form class="form">
+                    <input type="text" name="text" class="input">
+                    <input type="submit" name="submit" class="buttons-poisk" value="Поиск">
+                </form>
+            </div>
+
+
+            <a href="../user'sPersonalAccount/user'sPersonalAccount.html"
+                class="buttons-cabinet">
+                <img src="../img/wooden.svg" height="38px" width="38px" alt="">
+                Личный кабинет
+            </a>
+            <a href="../basket/basket.html" class="buttons-basket" id="cart"><img src="../img/basket.svg" height="30px"
+                    width="30px" alt="">
+                <div id="basketOpen">Корзина</div>
+                <div class="cart__num" id="cartNum">0</div>
+            </a>
+
+
+            <div class="basket">
+                <div class="mainBasketContainer" id="basketContainer">
+                    <div class="mainBasketTitle">
+                        Оформление заказа
+                    </div>
+                    <div id="basketContainerProduct">
+
+                    </div>
+
+                    <button class="basketClose" id="basketClose">✖</button>
+                    <div class="mainBasketCost">
+                        <div>
+                            <h2>Итого</h2>
+                            <div class="lol">
+                                <output class="mainbasketCostValue"></output>
+                                <div>
+                                    BYN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main id="main">
+
+        <div id="bord" class="bord cakeStrawberry">
+            <div id="0" class="mainCard">
+                <div class="mainFront" id="cakeStrawberry"></div>
+                <div class="mainInline" id="ingredientsCakeStrawberry"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn cakeStrawberry" id="button"><button>Подробнее</button></div>
+                <div class="mainMin cakeStrawberry" id="0"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber" value=""></div>
+                <div class="mainMax cakeStrawberry" id="0"><button>+</button></div>
+                <div class="mainBasket"><button id="0">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeRaspberries"></div>
+                <div class="mainInline" id="ingredientsCakeRaspberries"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn raspberries" id="button"><button>Подробнее</button></div>
+                <div class="mainMin raspberries" id="1"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax raspberries" id="1"><button>+</button></div>
+                <div class="mainBasket"><button id="1">В корзину</button></div>
+            </div>
+        </div>
+
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeHappyBirthday"></div>
+                <div class="mainInline" id="ingredientsCakeHappyBirthday"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn happyBirthday" id="button"><button>Подробнее</button></div>
+                <div class="mainMin happyBirthday" id="2"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax happyBirthday" id="2"><button>+</button></div>
+                <div class="mainBasket"><button id="2">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeChocolate"></div>
+                <div class="mainInline" id="ingredientsCakeChocolate"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn chocolate" id="button"><button>Подробнее</button></div>
+                <div class="mainMin chocolate" id="3"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax chocolate" id="3"><button>+</button></div>
+                <div class="mainBasket"><button id="3">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeCream"></div>
+                <div class="mainInline" id="ingredientsCakeCream"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn cream" id="button"><button>Подробнее</button></div>
+                <div class="mainMin cream" id="4"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax cream" id="4"><button>+</button></div>
+                <div class="mainBasket"><button id="4">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeMastic"></div>
+                <div class="mainInline" id="ingredientsCakeMastic"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn mastic" id="button"><button>Подробнее</button></div>
+                <div class="mainMin mastic" id="5"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax mastic" id="5"><button>+</button></div>
+                <div class="mainBasket"><button id="5">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeWedding"></div>
+                <div class="mainInline" id="ingredientsCakeWedding"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn wedding" id="button"><button>Подробнее</button></div>
+                <div class="mainMin wedding" id="6"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax wedding" id="6"><button>+</button></div>
+                <div class="mainBasket"><button id="6">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeEaster"></div>
+                <div class="mainInline" id="ingredientsCakeEaster"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn easter" id="button"><button>Подробнее</button></div>
+                <div class="mainMin easter" id="7"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax easter" id="7"><button>+</button></div>
+                <div class="mainBasket"><button id="7">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeSpring"></div>
+                <div class="mainInline" id="ingredientsCakeSpring"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn spring" id="button"><button>Подробнее</button></div>
+                <div class="mainMin spring" id="8"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax spring" id="8"><button>+</button></div>
+                <div class="mainBasket"><button id="8">В корзину</button></div>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class="mainCard">
+                <div class="mainFront" id="cakeNewYear"></div>
+                <div class="mainInline" id="ingredientsCakeNewYear"></div>
+            </div>
+            <div class="mainButtons">
+                <div class="mainBtn newYear" id="button"><button>Подробнее</button></div>
+                <div class="mainMin newYear" id="9"><button>-</button></div>
+                <div class="mainInput"><input type="text" placeholder="1" name="" id="inputNumber"></div>
+                <div class="mainMax newYear" id="9"><button>+</button></div>
+                <div class="mainBasket"><button id="9">В корзину</button></div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-logo">
+                <img src="D:\Учёба\Рецепты чистовой\img\logo.svg" alt="" height="70px" width="70px">
+                <div class="footer-container-cake">
+                    Время выпечки
+                </div>
+                <div class="footer-container-cake-lorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="footer-container-cake">
+                    <a href="https://www.instagram.com/"> <img src="../img/instagram.png"
+                            alt=""></a>
+                    <a href="https://twitter.com/?lang=ru"> <img src="../img/twitter.svg"
+                            alt=""></a>
+                    <a href="https://ru-ru.facebook.com/"> <img src="../img/facebook.svg"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/"> <img src="../img/youtube.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-container-links">
+                <div class="footer-container-fast-links">
+                    Быстрые ссылки
+                </div>
+                <div class="footer-container-link">
+                    <a href="">
+                        О нас
+                    </a>
+                    <a href="">
+                        Карта сайта
+                    </a>
+                    <a href="">
+                        Блог
+                    </a>
+                    <a href="">
+                        Агенты
+                    </a>
+                    <a href="">
+                        Покупка
+                    </a>
+                    <a href="">
+                        Аренда
+                    </a>
+                    <a href="">
+                        Купить сейчас
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer-container-contacts">
+                <div class="footer-container-contact-connection">
+                    Связаться с нами
+                </div>
+                <div class="footer-container-contact-plaze">
+                    <img src="../img/place_white.svg" alt=""> Адрес — Республика Беларусь, г. Минск,
+                    ул. Вокзальная, 1, 220007.
+                </div>
+                <div class="footer-container-contact-call">
+                    <img src="../img/call_white.svg" alt=""> Позвоните нам – +375 (44) 793-89-30
+                </div>
+                <div class="footer-container-contact-email">
+                    <img src="../img/email_white.svg" alt=""> Напишите нам – sima110190@yandex.ru
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="recipes.js"></script>
+</body>
+
+</html>
